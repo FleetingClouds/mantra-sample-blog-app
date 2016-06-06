@@ -17,11 +17,18 @@ Then you can access the app on <http://localhost:5005>
 
 In this app, every part of the client side is fully tested using the familiar tools like Mocha, Chai and Sinon.
 
-Run tests with:
+Run "on command line output results" tests with:
 
 ```
 npm test
 ```
+
+Run "in browser output results" tests with:
+
+```
+meteor test --driver-package practicalmeteor:mocha -p 3003
+```
+
 
 **See package.json for more information about testing setup.**
 
@@ -40,3 +47,4 @@ npm run storybook
 > npm install
 > npm run storybook
 > ```
+

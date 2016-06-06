@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint ./lib ./client ./server --ext .js",
     "lintfix": "npm run lint -- --fix",
-    "testonly": "mocha .scripts/mocha_boot.js client/**/tests/**/*.js --compilers js:babel-core/register",
+    "testonly": "mocha .scripts/mocha_boot.js client/**/mocha/**/*.js --compilers js:babel-core/register",
     "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "storybook": "start-storybook -p 9001 -s ./public"
@@ -19,6 +19,7 @@
     "babel-preset-stage-2": "6.x.x",
     "babel-root-slash-import": "1.x.x",
     "chai": "3.x.x",
+    "chimp": "0.35.x",
     "enzyme": "^2.2.0",
     "eslint": "1.10.x",
     "eslint-plugin-react": "3.15.x",
@@ -32,7 +33,8 @@
   "dependencies": {
     "domready": "^1.0.8",
     "mantra-core": "^1.5.0",
-    "react": "^15.0.0",
+    "meteor-node-stubs": "^0.2.3",
+    "react": "^15.1.0",
     "react-dom": "^15.0.0",
     "react-mounter": "^1.2.0"
   },

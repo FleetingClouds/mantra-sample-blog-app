@@ -3,6 +3,8 @@ import {expect} from 'chai';
 import {shallow} from 'enzyme';
 import CommentList from '../comment_list';
 
+import React from 'react';
+
 describe('comments.components.comment_list', () => {
   const comments = [
     {author: 'c-one', text: 't-one', saving: true, _id: 'one'},

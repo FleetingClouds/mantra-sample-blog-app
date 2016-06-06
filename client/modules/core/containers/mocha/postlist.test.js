@@ -19,7 +19,7 @@ describe('core.containers.postlist', () => {
     });
 
     describe('after subscribed', () => {
-      it('should fetch data from all posts & pass to onData', () => {
+      it('should fetch data from all posts & pass them to onData', () => {
         const Meteor = {subscribe: stub()};
         Meteor.subscribe.returns({ready: () => true});
 
