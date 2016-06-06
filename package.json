@@ -7,6 +7,7 @@
     "testonly": "mocha .scripts/mocha_boot.js client/**/mocha/**/*.js --compilers js:babel-core/register",
     "test": "npm run lint && npm run testonly",
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
+    "acceptance": "./node_modules/.bin/chimp --ddp=http://localhost:3000 --watch --path=.e2e_tests",
     "storybook": "start-storybook -p 9001 -s ./public"
   },
   "devDependencies": {
