@@ -23,6 +23,12 @@ Run "on command line output results" tests with:
 npm test
 ```
 
+Run "in browser output results" tests with:
+
+ ```
+meteor test --driver-package practicalmeteor:mocha -p 3003
+ ```
+
 Run "Chimp" acceptance tests with:
 
 ```
