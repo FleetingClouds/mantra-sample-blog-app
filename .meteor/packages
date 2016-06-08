@@ -22,3 +22,6 @@ check
 random
 standard-minifier-css
 standard-minifier-js
+
+std:accounts-ui
+std:accounts-basic
